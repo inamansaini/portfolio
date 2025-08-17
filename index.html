@@ -119,8 +119,7 @@
         }
 
         .skill-icon {
-            width: 100px;
-            height: 100px;
+            /* width and height are now controlled by Tailwind classes in HTML */
             border-radius: 50%;
             background-color: var(--bg-card);
             border: 2px solid var(--border-color);
@@ -243,8 +242,8 @@
         <section id="hero" class="hero-section min-h-screen flex items-center justify-center relative px-4">
             <div class="max-w-4xl mx-auto text-center relative z-10" data-aos="fade-up">
                 <p class="text-sky-400 font-medium mb-4 text-lg">Hello, my name is</p>
-                <h1 class="text-6xl md:text-8xl font-extrabold tracking-tight text-white mb-4">Naman</h1>
-                <h2 class="text-2xl md:text-4xl font-bold text-slate-300 mb-8">A Data Scientist & AI Enthusiast.</h2>
+                <h1 class="text-5xl sm:text-6xl md:text-8xl font-extrabold tracking-tight text-white mb-4">Naman</h1>
+                <h2 class="text-xl sm:text-2xl md:text-4xl font-bold text-slate-300 mb-8">A Data Scientist & AI Enthusiast.</h2>
                 <p class="text-lg max-w-3xl mx-auto text-slate-400 mb-12">
                     I'm passionate about transforming data into intelligent action and building <span id="typed-text" class="text-sky-400 font-semibold"></span> that solve real-world problems.
                 </p>
@@ -255,9 +254,9 @@
             </div>
         </section>
 
-        <section id="about" class="py-24 px-4">
+        <section id="about" class="py-16 md:py-24 px-4">
             <div class="max-w-6xl mx-auto">
-                <h2 class="text-4xl md:text-5xl font-bold text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 md:mb-16" data-aos="fade-up">
                     <span class="text-sky-400">01.</span> About Me
                 </h2>
                 <div class="grid md:grid-cols-5 gap-12 items-center">
@@ -282,9 +281,9 @@
             </div>
         </section>
 
-        <section id="projects" class="py-24 px-4 bg-slate-900/50">
+        <section id="projects" class="py-16 md:py-24 px-4 bg-slate-900/50">
             <div class="max-w-7xl mx-auto">
-                <h2 class="text-4xl md:text-5xl font-bold text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 md:mb-16" data-aos="fade-up">
                     <span class="text-sky-400">02.</span> Featured Projects
                 </h2>
                 <div class="grid md:grid-cols-2 gap-8">
@@ -327,30 +326,30 @@
             </div>
         </section>
 
-        <section id="skills" class="py-24 px-4">
+        <section id="skills" class="py-16 md:py-24 px-4">
             <div class="max-w-7xl mx-auto">
-                <h2 class="text-4xl md:text-5xl font-bold text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 md:mb-16" data-aos="fade-up">
                     <span class="text-sky-400">03.</span> Technical Skills
                 </h2>
                 
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center" data-aos="fade-up" data-aos-delay="100">
                     <div>
-                        <div class="skill-icon mx-auto mb-4"><i class="fas fa-code text-3xl text-sky-400 transition-colors"></i></div>
+                        <div class="skill-icon w-20 h-20 md:w-24 md:h-24 mx-auto mb-4"><i class="fas fa-code text-3xl text-sky-400 transition-colors"></i></div>
                         <h3 class="text-xl font-bold mb-2">Languages</h3>
                         <p class="text-slate-400">Python, Java, SQL</p>
                     </div>
                     <div>
-                        <div class="skill-icon mx-auto mb-4"><i class="fas fa-brain text-3xl text-sky-400 transition-colors"></i></div>
+                        <div class="skill-icon w-20 h-20 md:w-24 md:h-24 mx-auto mb-4"><i class="fas fa-brain text-3xl text-sky-400 transition-colors"></i></div>
                         <h3 class="text-xl font-bold mb-2">Data Science & ML</h3>
                         <p class="text-slate-400">Pandas, NumPy, Scikit-learn</p>
                     </div>
                     <div>
-                        <div class="skill-icon mx-auto mb-4"><i class="fas fa-globe text-3xl text-sky-400 transition-colors"></i></div>
+                        <div class="skill-icon w-20 h-20 md:w-24 md:h-24 mx-auto mb-4"><i class="fas fa-globe text-3xl text-sky-400 transition-colors"></i></div>
                         <h3 class="text-xl font-bold mb-2">Web Development</h3>
                         <p class="text-slate-400">Flask, HTML, CSS, JS</p>
                     </div>
                     <div>
-                        <div class="skill-icon mx-auto mb-4"><i class="fas fa-database text-3xl text-sky-400 transition-colors"></i></div>
+                        <div class="skill-icon w-20 h-20 md:w-24 md:h-24 mx-auto mb-4"><i class="fas fa-database text-3xl text-sky-400 transition-colors"></i></div>
                         <h3 class="text-xl font-bold mb-2">Databases</h3>
                         <p class="text-slate-400">MySQL, SQLite, MongoDB</p>
                     </div>
@@ -358,9 +357,9 @@
             </div>
         </section>
 
-        <section id="education" class="py-24 px-4 bg-slate-900/50">
+        <section id="education" class="py-16 md:py-24 px-4 bg-slate-900/50">
             <div class="max-w-4xl mx-auto">
-                <h2 class="text-4xl md:text-5xl font-bold text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 md:mb-16" data-aos="fade-up">
                     <span class="text-sky-400">04.</span> Education
                 </h2>
                 <div class="space-y-8" data-aos="fade-up" data-aos-delay="100">
@@ -382,16 +381,16 @@
             </div>
         </section>
 
-        <section id="contact" class="py-24 px-4">
+        <section id="contact" class="py-16 md:py-24 px-4">
             <div class="max-w-3xl mx-auto text-center" data-aos="fade-up">
-                 <h2 class="text-4xl md:text-5xl font-bold mb-6">
-                      <span class="text-sky-400">05.</span> Get In Touch
+                 <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
+                     <span class="text-sky-400">05.</span> Get In Touch
                  </h2>
                  <p class="text-lg text-slate-400 mb-12 max-w-xl mx-auto">
-                      I'm currently seeking new opportunities and my inbox is always open. Whether you have a question or just want to connect, feel free to reach out!
+                     I'm currently seeking new opportunities and my inbox is always open. Whether you have a question or just want to connect, feel free to reach out!
                  </p>
                  <a href="mailto:namansaini720@gmail.com" class="btn btn-primary text-lg">
-                      Say Hello
+                     Say Hello
                  </a>
             </div>
         </section>
