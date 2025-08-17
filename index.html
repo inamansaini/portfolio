@@ -198,18 +198,23 @@
     </style>
 </head>
 <body data-aos-easing="ease-out-cubic" data-aos-duration="800">
+    <!-- Loading Screen -->
     <div class="loading" id="loading">
         <div class="loader"></div>
     </div>
 
+    <!-- Scroll Progress Bar -->
     <div class="scroll-progress" id="scrollProgress"></div>
 
+    <!-- Header & Navigation -->
     <header id="header" class="fixed top-0 w-full z-50">
         <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
                 <div>
                     <a href="#hero" class="text-2xl font-bold tracking-wide text-white">NAMAN</a>
                 </div>
+                <!-- Desktop Menu -->
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-6">
                         <a href="#about" class="nav-link px-3 py-2 text-sm font-medium text-slate-300 hover:text-white">About</a>
@@ -219,6 +224,7 @@
                         <a href="#contact" class="nav-link px-3 py-2 text-sm font-medium text-slate-300 hover:text-white">Contact</a>
                     </div>
                 </div>
+                <!-- Mobile Menu Button -->
                 <div class="md:hidden">
                     <button id="mobileMenuBtn" class="text-white text-2xl p-2 focus:outline-none">
                         <i class="fas fa-bars"></i>
@@ -227,7 +233,8 @@
             </div>
         </nav>
         
-        <div class="mobile-menu md:hidden fixed top-16 left-0 w-full" id="mobileMenu">
+        <!-- Mobile Menu (Corrected) -->
+        <div class="mobile-menu md:hidden fixed top-0 left-0 w-full h-screen pt-16 z-40" id="mobileMenu">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-700">About</a>
                 <a href="#projects" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-700">Projects</a>
@@ -239,6 +246,7 @@
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section id="hero" class="hero-section min-h-screen flex items-center justify-center relative px-4">
             <div class="max-w-4xl mx-auto text-center relative z-10" data-aos="fade-up">
                 <p class="text-sky-400 font-medium mb-4 text-lg">Hello, my name is</p>
@@ -254,6 +262,7 @@
             </div>
         </section>
 
+        <!-- About Section -->
         <section id="about" class="py-16 md:py-24 px-4">
             <div class="max-w-6xl mx-auto">
                 <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 md:mb-16" data-aos="fade-up">
@@ -267,7 +276,7 @@
                     </div>
                     <div class="md:col-span-2" data-aos="fade-left">
                         <div class="professional-card p-8 text-center">
-                            <img src="https://avatars.githubusercontent.com/u/128694086?v=4" alt="Naman" class="w-40 h-40 mx-auto mb-6 rounded-full border-4 border-sky-400/50">
+                            <img src="https://avatars.githubusercontent.com/u/128694086?v=4" alt="Naman" class="w-40 h-40 mx-auto mb-6 rounded-full border-4 border-sky-400/50" onerror="this.onerror=null;this.src='https://placehold.co/160x160/1e293b/f8fafc?text=Naman';">
                             <h3 class="text-2xl font-bold mb-2">Naman</h3>
                             <p class="text-slate-400">AI & Data Science Student</p>
                             <p class="text-sm text-slate-500 mt-1">Bhiwani, Haryana</p>
@@ -281,6 +290,7 @@
             </div>
         </section>
 
+        <!-- Projects Section -->
         <section id="projects" class="py-16 md:py-24 px-4 bg-slate-900/50">
             <div class="max-w-7xl mx-auto">
                 <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 md:mb-16" data-aos="fade-up">
@@ -326,6 +336,7 @@
             </div>
         </section>
 
+        <!-- Skills Section -->
         <section id="skills" class="py-16 md:py-24 px-4">
             <div class="max-w-7xl mx-auto">
                 <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 md:mb-16" data-aos="fade-up">
@@ -357,6 +368,7 @@
             </div>
         </section>
 
+        <!-- Education Section -->
         <section id="education" class="py-16 md:py-24 px-4 bg-slate-900/50">
             <div class="max-w-4xl mx-auto">
                 <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 md:mb-16" data-aos="fade-up">
@@ -381,6 +393,7 @@
             </div>
         </section>
 
+        <!-- Contact Section -->
         <section id="contact" class="py-16 md:py-24 px-4">
             <div class="max-w-3xl mx-auto text-center" data-aos="fade-up">
                  <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
@@ -396,6 +409,7 @@
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="py-8 border-t border-white/10">
         <div class="max-w-7xl mx-auto px-4 text-center">
             <div class="flex justify-center gap-6 mb-4">
@@ -408,10 +422,12 @@
     </footer>
 
 
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
+        // --- Loading Screen ---
         window.addEventListener('load', () => {
             const loader = document.getElementById('loading');
             if (loader) {
@@ -422,9 +438,12 @@
             }
         });
 
+        // --- Main Script on DOM Content Loaded ---
         document.addEventListener('DOMContentLoaded', function() {
+            // Initialize AOS (Animate on Scroll)
             AOS.init({ once: true, duration: 800, offset: 50 });
 
+            // Initialize Typed.js for hero section
             if (document.getElementById('typed-text')) {
                 new Typed('#typed-text', {
                     strings: ['machine learning models', 'data visualizations', 'AI-powered solutions'],
@@ -435,6 +454,7 @@
                 });
             }
             
+            // --- Scroll Progress Bar ---
             const scrollProgress = document.getElementById('scrollProgress');
             window.addEventListener('scroll', () => {
                 const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
@@ -444,6 +464,7 @@
                 }
             });
 
+            // --- Mobile Menu Toggle ---
             const mobileMenuBtn = document.getElementById('mobileMenuBtn');
             const mobileMenu = document.getElementById('mobileMenu');
             const mobileMenuLinks = mobileMenu.querySelectorAll('a');
@@ -454,6 +475,8 @@
                     icon.classList.toggle('fa-bars');
                     icon.classList.toggle('fa-times');
                 });
+                
+                // Close menu when a link is clicked
                 mobileMenuLinks.forEach(link => {
                     link.addEventListener('click', () => {
                         mobileMenu.classList.remove('open');
