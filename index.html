@@ -9,18 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
-        /* * Professional Color Palette & Styling
-         * This version uses a more subdued and professional color scheme.
-         * Animations are toned down to be subtle and not distracting.
-         * The focus is on clean lines, readability, and content.
-        */
         :root {
-            --bg-dark: #0f172a; /* Slate 900 */
-            --bg-card: #1e293b; /* Slate 800 */
-            --text-light: #f8fafc; /* Slate 50 */
-            --text-muted: #94a3b8; /* Slate 400 */
-            --accent: #38bdf8; /* Sky 400 */
-            --accent-hover: #0ea5e9; /* Sky 500 */
+            --bg-dark: #0f172a;
+            --bg-card: #1e293b;
+            --text-light: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --accent-hover: #0ea5e9;
             --border-color: rgba(56, 189, 248, 0.2);
             --shadow-glow: 0 0 20px rgba(56, 189, 248, 0.2);
         }
@@ -32,14 +27,12 @@
             overflow-x: hidden;
         }
 
-        /* Header with a subtle blur effect */
         #header {
             background: rgba(15, 23, 42, 0.8);
             backdrop-filter: blur(10px);
             border-bottom: 1px solid var(--border-color);
         }
 
-        /* Navigation Links with a clean underline effect */
         .nav-link {
             position: relative;
             transition: color 0.3s ease;
@@ -60,7 +53,6 @@
             width: 70%;
         }
 
-        /* Hero Section with a subtle background gradient and animation */
         .hero-section {
             background: radial-gradient(ellipse at 50% 40%, rgba(56, 189, 248, 0.05) 0%, transparent 70%);
             position: relative;
@@ -81,7 +73,6 @@
             100% { left: 100%; }
         }
         
-        /* Typing cursor animation */
         .typed-cursor {
             color: var(--accent);
             animation: blink 0.7s infinite;
@@ -90,7 +81,6 @@
             50% { opacity: 0; }
         }
 
-        /* Professional Card Style */
         .professional-card {
             background-color: var(--bg-card);
             border: 1px solid rgba(255, 255, 255, 0.1);
@@ -102,7 +92,6 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), var(--shadow-glow);
         }
 
-        /* Simple, clean buttons */
         .btn {
             display: inline-block;
             font-weight: 600;
@@ -129,7 +118,6 @@
             color: var(--bg-dark);
         }
 
-        /* Simplified Skill Icons */
         .skill-icon {
             width: 100px;
             height: 100px;
@@ -151,7 +139,6 @@
             color: var(--bg-dark);
         }
 
-        /* Refined Timeline */
         .timeline-item {
             position: relative;
             padding: 20px;
@@ -165,7 +152,6 @@
             transform: translateX(5px);
         }
 
-        /* Scroll Progress Bar */
         .scroll-progress {
             position: fixed;
             top: 0;
@@ -176,7 +162,6 @@
             z-index: 1000;
         }
 
-        /* Mobile Menu */
         .mobile-menu {
             background: rgba(15, 23, 42, 0.95);
             backdrop-filter: blur(15px);
@@ -187,7 +172,6 @@
             transform: translateY(0);
         }
 
-        /* Loading Animation */
         .loading {
             position: fixed;
             top: 0;
@@ -401,13 +385,13 @@
         <section id="contact" class="py-24 px-4">
             <div class="max-w-3xl mx-auto text-center" data-aos="fade-up">
                  <h2 class="text-4xl md:text-5xl font-bold mb-6">
-                     <span class="text-sky-400">05.</span> Get In Touch
+                      <span class="text-sky-400">05.</span> Get In Touch
                  </h2>
                  <p class="text-lg text-slate-400 mb-12 max-w-xl mx-auto">
-                     I'm currently seeking new opportunities and my inbox is always open. Whether you have a question or just want to connect, feel free to reach out!
+                      I'm currently seeking new opportunities and my inbox is always open. Whether you have a question or just want to connect, feel free to reach out!
                  </p>
                  <a href="mailto:namansaini720@gmail.com" class="btn btn-primary text-lg">
-                     Say Hello
+                      Say Hello
                  </a>
             </div>
         </section>
@@ -429,7 +413,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
-        // --- Page Load ---
         window.addEventListener('load', () => {
             const loader = document.getElementById('loading');
             if (loader) {
@@ -441,10 +424,8 @@
         });
 
         document.addEventListener('DOMContentLoaded', function() {
-            // --- Initialize AOS (Animate on Scroll) ---
             AOS.init({ once: true, duration: 800, offset: 50 });
 
-            // --- Typed.js for Hero Section ---
             if (document.getElementById('typed-text')) {
                 new Typed('#typed-text', {
                     strings: ['machine learning models', 'data visualizations', 'AI-powered solutions'],
@@ -455,7 +436,6 @@
                 });
             }
             
-            // --- Scroll Progress Bar ---
             const scrollProgress = document.getElementById('scrollProgress');
             window.addEventListener('scroll', () => {
                 const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
@@ -465,7 +445,6 @@
                 }
             });
 
-            // --- Mobile Menu Toggle ---
             const mobileMenuBtn = document.getElementById('mobileMenuBtn');
             const mobileMenu = document.getElementById('mobileMenu');
             const mobileMenuLinks = mobileMenu.querySelectorAll('a');
@@ -476,7 +455,6 @@
                     icon.classList.toggle('fa-bars');
                     icon.classList.toggle('fa-times');
                 });
-                // Close menu when a link is clicked
                 mobileMenuLinks.forEach(link => {
                     link.addEventListener('click', () => {
                         mobileMenu.classList.remove('open');
